@@ -9,7 +9,8 @@ Generative modelling is based on observation: in language models, one observatio
 Notebooks are numerated, to follow a logic.
 
 0. First start with `00_framing_and_fundamentals.ipynb` which details the subject and scope of the project. We will deal with Sentinel 2, Landsat 8 and 9 satellites, and read/ learn about Satellite missions, Sensors, Spectral bands, Spatial resolution, Spectral resolution, Temporal resolution, Spectral indices, Remote sensing applications, Data products and Processing methods. 
-1. Notebook `01_document_ingestion;ipynb`
+1. Notebook `01_document_ingestion.ipynb` defines and creates the folders needed for the project, distinguishing the raw documents from the processed files. The raw docs are Sentinel 2 and Landsat 8 and 9 data sheets. We use Langchain framework to load the files with PyPDFLoader library for PDF files. It allows reading the file, preview it and extract metadata. The processed files are those files stored in a JSONL file. To avoid having to reread and reload all the PDFs at each execution, we save the ingestion result in JSONL format in the processed subfolder. JSONL means JSON Lines: each line is an independent JSON object and contains a page loaded text with its metadata. 
+2. 
 
 # RAG-and-LLM
 RAG and LLM comparison 
