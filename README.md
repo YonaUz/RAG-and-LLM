@@ -5,6 +5,12 @@ Ready to start ? Welcome to the adventure!
 
 Generative modelling is based on observation: in language models, one observation may be that some word are usually associated to another; "Queen" goes to "She" while "King" goes to "He"; "The cat eats the mouse" or "The mouse is eaten by the cat", but rarely inverse. In image modelling, cars are located in the street and the sea is blue, while rarely pedestrians smile under the rain...  And so on the generated image will be, based on the probabilistic observed text or image. 
 
+
+Notebooks are numerated, to follow a logic.
+
+0. First start with `00_framing_and_fundamentals.ipynb` which details the subject and scope of the project. We will deal with Sentinel 2, Landsat 8 and 9 satellites, and read/ learn about Satellite missions, Sensors, Spectral bands, Spatial resolution, Spectral resolution, Temporal resolution, Spectral indices, Remote sensing applications, Data products and Processing methods. 
+1. Notebook `01_document_ingestion;ipynb`
+
 # RAG-and-LLM
 RAG and LLM comparison 
 A Large Language Model (LLM) is built from thousand of multi-source information, and is up to date until the date is has been released, so it may create hallucinations, invente information. On the other side,  for some general information, a LLM can be really powerful and enough. It depends of the context and the accuracy needed. An interesting option for continuing with LLM with some accurate and tricky information is to provide access to some documentation and prohibit it to go ahead from the documentation provided. Another interesting tool is the RAG, Retrieval-Augmented Generation. 
